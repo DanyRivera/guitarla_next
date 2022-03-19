@@ -3,11 +3,9 @@ import styles from '../styles/Listado.module.css';
 
 const Listado = ({ guitarras }) => {
 
-    console.log(guitarras);
-
     return (
 
-        <div className={styles.listado}>
+        <div className={`contenedor ${styles.listado}`}>
             {guitarras.map(guitarra => (
                 <Guitarra 
                     key={guitarra.url}
